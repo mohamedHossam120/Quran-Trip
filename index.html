@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>القرآن الكريم - رحلة طيبة</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-572-designer.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <div class="loader">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="34px" height="40px" viewBox="0 0 24 30">
+            <rect x="0" y="10" width="4" height="10" fill="#333" opacity="0.2">
+                <animate attributeName="opacity" values="0.2; 1; .2" begin="0s" dur="0.8s" repeatCount="indefinite" />
+                <animate attributeName="height" values="10; 20; 10" begin="0s" dur="0.8s" repeatCount="indefinite" />
+                <animate attributeName="y" values="10; 5; 10" begin="0s" dur="0.8s" repeatCount="indefinite" />
+            </rect>
+            <rect x="8" y="10" width="4" height="10" fill="#333" opacity="0.2">
+                <animate attributeName="opacity" values="0.2; 1; .2" begin="0.15s" dur="0.8s" repeatCount="indefinite" />
+                <animate attributeName="height" values="10; 20; 10" begin="0.15s" dur="0.8s" repeatCount="indefinite" />
+                <animate attributeName="y" values="10; 5; 10" begin="0.15s" dur="0.8s" repeatCount="indefinite" />
+            </rect>
+            <rect x="16" y="10" width="4" height="10" fill="#333" opacity="0.2">
+                <animate attributeName="opacity" values="0.2; 1; .2" begin="0.3s" dur="0.8s" repeatCount="indefinite" />
+                <animate attributeName="height" values="10; 20; 10" begin="0.3s" dur="0.8s" repeatCount="indefinite" />
+                <animate attributeName="y" values="10; 5; 10" begin="0.3s" dur="0.8s" repeatCount="indefinite" />
+            </rect>
+        </svg>
+    </div>
+
+    <header id="top">
+        <nav class="main-navigation navbar navbar-expand-lg navbar-light navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="#top">
+                    <img class="logo logo-custom" src="https://static.vecteezy.com/system/resources/previews/021/121/749/large_2x/quran-calligraphy-typography-free-png.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler toggler-custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link nav-link-custom-active" href="#quran-section">استعراض السور</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#live-section">بث مباشر</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#radio-section">الراديو</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#tafsir-section">تفسير القرآن</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#quran-text-section">المصحف المكتوب</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header-text">
+                        <h6 style="margin-top: 100px;">رحلة طيبة في رحاب</h6>
+                        <h2>القرآن الكريم</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-bottom:100px;" class="search-form" id="quran-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <form id="search-form" name="gs" method="submit" action="#" onsubmit="event.preventDefault();">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <fieldset>
+                                    <label for="chooseReader" class="form-label">اختر القارئ</label>
+                                    <select name="Category" class="form-select" id="chooseReader">
+                                        <option value="">جاري تحميل القراء...</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-3">
+                                <fieldset>
+                                    <label for="chooseNarration" class="form-label">اختر الرواية</label>
+                                    <select name="Price" class="form-select" id="chooseNarration">
+                                        <option value="">اختر القارئ أولاً...</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-3">
+                                <fieldset>
+                                    <label for="chooseSurah" class="form-label">اختر السورة</label>
+                                    <select name="Plan" class="form-select" id="chooseSurah">
+                                        <option value="">اختر الرواية أولاً...</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <audio id="surahPlayer" controls style="width: 100%;">
+                                    <source src="" type="audio/mpeg">
+                                    متصفحك لا يدعم مشغل الصوت.
+                                </audio>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact-us" id="live-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center button-container">
+                    <h1 class="live-title">اختر قناة البث المباشر</h1>
+                    <span class="white-button">
+                        <button type="button" onclick='playlive("https://win.holol.com/live/quran/playlist.m3u8")'>قناة القرآن الكريم</button>
+                    </span>
+                    <span class="white-button">
+                        <button type="button" onclick='playlive("https://win.holol.com/live/sunnah/playlist.m3u8")'>قناة السنة النبوية</button>
+                    </span>
+                </div>
+                <div class="col-lg-12">
+                    <video width="100%" height="440" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="radio-section" id="radio-section">
+        <div class="container">
+            <div class="radio-box">
+                <div class="radio-header text-center">
+                    <h2>إذاعات القرآن الكريم</h2>
+                    <p>اختر إذاعة واستمع إلى البث المباشر بجودة عالية.</p>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-8 col-12">
+                        <select class="form-select radio-select-custom" id="chooseRadio" dir="rtl">
+                            <option>جاري تحميل الإذاعات...</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 mt-3 mt-md-0">
+                        <button class="custom-btn-unified" id="playRadio">▶ تشغيل الإذاعة</button>
+                    </div>
+                    <div class="col-lg-12 mt-4">
+                        <audio id="radioPlayer" controls class="radio-player-custom"></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tafsir-section" id="tafsir-section">
+        <div class="container">
+            <div class="tafsir-box">
+                <div class="tafsir-header text-center">
+                    <h2>الخلاصة من تفسير الطبري</h2>
+                    <p>اختر السورة واستمع إلى التفسير الصوتي مباشرة بجودة عالية.</p>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-8 col-12">
+                        <select class="form-select tafsir-select-custom" id="tafsir-select" dir="rtl">
+                            <option value="">جاري تحميل قائمة السور والتفاسير...</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 mt-3 mt-md-0">
+                        <button class="custom-btn-unified" id="play-tafsir-btn">▶ تشغيل التفسير</button>
+                    </div>
+                    <div class="col-lg-12 mt-4">
+                        <audio id="tafsirPlayer" controls class="tafsir-player-custom"></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quran-text-section" id="quran-text-section">
+        <div class="container">
+            <div class="quran-box">
+                <div class="quran-header text-center">
+                    <h2>المصحف الشريف المكتوب</h2>
+                    <p>اختر السورة لقراءة الآيات الكريمة مباشرة بخط واضح ومريح.</p>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-8 col-12">
+                        <select class="form-select quran-select-custom" id="quran-select" dir="rtl">
+                            <option value="">جاري تحميل قائمة السور...</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 mt-3 mt-md-0">
+                        <button class="custom-btn-unified" id="show-quran-btn">📖 عرض السورة</button>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-12">
+                        <div id="surah-container" class="surah-container-custom">
+                            <div id="surah-title" class="text-center surah-title-custom"></div>
+                            <div id="surah-text" dir="rtl" class="surah-text-custom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="about-widget">
+                        <img src="https://static.vecteezy.com/system/resources/previews/021/121/749/large_2x/quran-calligraphy-typography-free-png.png" alt="Quran Logo" class="footer-logo-custom">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="location-widget">
+                        <h4 class="footer-title">عن المنصة</h4>
+                        <p class="footer-desc">منصة "رحلة طيبة" هي واجهتك الرقمية البسيطة للاستماع والتنقل بين تلاوات المصحف الشريف، إذاعات الراديو المباشرة، وقنوات الحرمين الشريفين بكل سهولة وسلاسة.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="customer-care">
+                        <h4 class="footer-title">روابط سريعة</h4>
+                        <ul class="info footer-links-list">
+                            <li><a href="#quran-section">تلاوة السور</a></li>
+                            <li><a href="#live-section">البث المباشر</a></li>
+                            <li><a href="#radio-section">الراديو والإذاعات</a></li>
+                            <li><a href="#tafsir-section">تفسير القرآن</a></li>
+                            <li><a href="#quran-text-section">المصحف المكتوب</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="sub-footer sub-footer-custom">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-sm-12 text-center text-lg-start mb-3 mb-lg-0">
+                                    <p class="m-0 copyright-text">جميع الحقوق محفوظة © 2026. منصة رحلة طيبة.</p>
+                                </div>
+                                <div class="col-lg-6 col-sm-12 text-center text-lg-end">
+                                    <a href="#top" class="scroll-to-top scroll-to-top-custom d-inline-flex align-items-center justify-content-center gap-2">
+                                        <span>العودة لأعلى</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5..." />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="assets/js/index.js"></script>
+    
+</body>
+
+</html>
