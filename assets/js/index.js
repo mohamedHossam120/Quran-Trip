@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     data.data.forEach(surah => {
                         const option = document.createElement('option');
                         option.value = surah.number; 
-                        option.textContent = `${surah.number}. سورة ${surah.name} (${surah.numberOfAyahs} آية)`;
+                        option.textContent = `${surah.number}.${surah.name} (${surah.numberOfAyahs} آية)`;
                         quranSelect.appendChild(option);
                     });
                 }
@@ -293,7 +293,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     if (data.data) {
                         const surah = data.data;
-                        surahTitle.innerHTML = `✨ سورة ${surah.name} ✨`;
+                        surahTitle.innerHTML = `✨ ${surah.name} ✨`;
 
                         let htmlContent = "";
 
